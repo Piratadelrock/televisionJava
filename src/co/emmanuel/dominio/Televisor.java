@@ -8,20 +8,32 @@ public class Televisor {
     public byte volumenActual;
 
     public void encender(){
-
+        this.encendido = true;
     }
     public void apagar(){
-
+        this.encendido = false;
     }
 
     public boolean cambiarCanal(short nuevoCanal){
-        return false;
+        if (this.encendido){
+            this.canalSintonizado = nuevoCanal;
+            return true;
+        }
+        else{
+            return false;
+        }
     }
 
     public void subirVolumen(){
+        if (this.encendido){
+            this.volumenActual++;
+        }
+
 
     }
     public void bajarVolumen(){
-
+        if (this.encendido){
+            this.volumenActual--;
+        }
     }
 }
