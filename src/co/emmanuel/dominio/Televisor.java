@@ -7,4 +7,21 @@ public class Televisor {
     public short canalSintonizado;
     public byte volumenActual;
 
+    public void encender(){
+
+    }
+    public void apagar(){
+
+    }
+
+    public boolean cambiarCanal(short nuevoCanal){
+        return false;
+    }
+
+    public void subirVolumen(){
+
+    }
+    public void bajarVolumen(){
+
+    }
 }
